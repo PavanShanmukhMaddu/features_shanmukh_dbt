@@ -8,9 +8,9 @@ cust_mstr_kna1 as (
  
     select
  
-        cust_number as cust_number,
-        cust_location as cust_location,
-        cust_country as cust_country
+        cust_number,
+        cust_location,
+        cust_country
  
     from source_raw
  

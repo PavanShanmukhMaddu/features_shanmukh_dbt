@@ -8,8 +8,8 @@ prod_mstr_tpna1 as (
  
     select
  
-        product_id as product_id,
-        product_name as product_name
+        product_id,
+        product_name
  
     from source_raw
  

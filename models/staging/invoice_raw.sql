@@ -8,13 +8,13 @@ invoice_raw as (
  
     select
  
-        customer_nbr as customer_nbr,
+        customer_nbr,
         product_nbr as product_id,
-        transaction_timestamp as transaction_timestamp,
-        creation_date as creation_date,
-        region as region,
-        zone as zone,
-        quantity as quantity,
+        transaction_timestamp,
+        creation_date,
+        region,
+        zone,
+        quantity,
         {{ dbt_utils.generate_surrogate_key(['customer_nbr', 'product_id', 'transaction_timestamp']) }} as hashkey
  
     from source_raw
