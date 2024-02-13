@@ -8,9 +8,9 @@ cust_mstr_tkna1 as (
  
     select
  
-        cust_number as cust_number,
-        first_name as first_name,
-        last_name as last_name
+        cust_number,
+        first_name,
+        last_name
  
     from source_raw
  

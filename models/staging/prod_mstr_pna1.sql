@@ -8,11 +8,11 @@ prod_mstr_pna1 as (
  
     select
  
-        product_id as product_id,
-        product_pricing as product_pricing,
-        product_margin as product_margin,
-        prod_date as prod_date,
-        category_code as category_code
+        product_id,
+        product_pricing,
+        product_margin,
+        prod_date,
+        category_code
  
     from source_raw
  
